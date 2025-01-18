@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pythonproject
+  labels:
+    app: pythonproject
+spec: 
+  containers:
+  - name: pythonproject
+    image: docker.io/bharathpantala/pythonproj:latest
+    ports:
+    - containerPort: 8000
